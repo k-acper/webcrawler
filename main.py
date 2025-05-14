@@ -48,7 +48,7 @@ def crawl(url, max_pages=100):
     return found_pages
 
 @app.route('/pages')
-def crawl_pages():
+def crawl_request():
     url = request.args.get('target')
     
     if not url:
